@@ -10,7 +10,7 @@ class Animal:
     def drink(self,drinks):
         self.drinks=drinks
         return f"{self.name} drinks {self.drinks}"
-    def age(self):
+    def age_status(self):
         if self.age >10:
             return f"{self.name} is old"
         else:
@@ -34,5 +34,6 @@ class Cat(Animal):
 cat1=Cat("cat","mammals",4,"brown")
 elephant=Animal("elephant","mammals",20,)
 print(elephant.eat("Vegetables"))
+print(elephant.age_status())
 print(cat1.eat("pasta"))
 print(cat1.meow("n"))
